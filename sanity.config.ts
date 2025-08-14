@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: process.env.SANITY_TITLE,
-  projectId: process.env.SANITY_PROJECT_ID || ' ',
-  dataset: process.env.SANITY_DATASET || 'production',
+  title: process.env.SANITY_STUDIO_TITLE || 'rccg-sweden',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID || 'gwkl8c9e',
+  dataset: process.env.SANITY_STUDIO_DATASET || 'production',
 
   plugins: [structureTool(), visionTool()],
 
